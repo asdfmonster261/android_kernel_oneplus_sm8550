@@ -48,6 +48,9 @@
 #include <trace/events/android_fs.h>
 #include <uapi/linux/f2fs.h>
 
+#undef CREATE_TRACE_POINTS
+#include <trace/hooks/fs.h>
+
 #ifdef CONFIG_F2FS_FS_DEDUP
 #define DEDUP_COMPARE_PAGES	10
 
